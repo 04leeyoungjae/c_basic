@@ -6,4 +6,3 @@ int main(void){
     printf("%.1f MB",(float)h*b*c*s/8/1024/1024);
     return 0;
 }
-
