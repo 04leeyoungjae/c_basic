@@ -16,6 +16,7 @@ void push( int new_data, int stack[], int *top_index, int *cur_size )
         stack[*top_index+1]=new_data;
         *top_index+=1;
         *cur_size+=1;
+	return;
     }
 
 	// push data to stack
@@ -38,6 +39,7 @@ void pop( int stack[], int *top_index, int *cur_size )
         printf( "%d\n",stack[*top_index] );
         *top_index-=1;
         *cur_size-=1;
+	    return;
     }
 
 	// pop data from stack
@@ -88,6 +90,7 @@ void print_stack( int stack[], int cur_size )
         else puts("");
     }
 	printf( "-------------\n" );
+	return;
 }
 
 
